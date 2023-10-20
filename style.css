@@ -1,0 +1,151 @@
+.page {
+    margin: 0;
+    font-family: Montserrat, sans-serif;
+    font-size: 12px;
+}
+
+.page__content {
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.page__main {
+    flex-grow: 1;
+}
+
+.container {
+    max-width: 616px;
+    margin: 0 auto;
+}
+
+.first-screen {
+    background: #fff url('./images/background.svg') center center no-repeat;
+    background-size: 100%;
+
+    text-align: center;
+    padding: 72px;
+}
+
+.first-screen__title {
+    margin: 0;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 140%; /* 44.8px */
+    text-transform: capitalize;
+}
+
+.first-screen__picture {
+    margin-bottom: -146px;
+}
+
+.user-picture__container {
+    position: relative;
+    left: -12px;
+    display: inline-block;
+}
+
+.user-picture__container::before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    left: 24px;
+    top: 0;
+    position: absolute;
+    border: 1px solid #748C70;
+    border-radius: 50%;
+} 
+
+.user-picture__image {
+    width: 234px;
+    height: 234px;
+    object-fit: cover;
+
+    border-radius: 50%;
+}
+
+.first-screen__post {
+    margin: 4px 0 46px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 180%; /* 28.8px */
+    text-transform: capitalize;
+}
+
+.description {
+    background:#404E3E;
+    color: white;
+    padding: 98px 32px 37px;
+}
+
+.description__content {
+    margin-bottom: 40px;
+    line-height: 180%; /* 21.6px */
+    text-transform: capitalize;
+}
+
+.description__content p:first-child {
+    margin-top: 0;
+}
+
+.description__content p:last-child {
+    margin-bottom: 0;
+}
+
+.button-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.button-list__item {
+    width: calc((100% - 20px) / 2);
+}
+
+.button {
+    color: #000;
+    display: inline-block;
+    text-decoration: none;
+    background-color: #fff;
+    display: flex;
+    height: 24px;
+    padding: 4px 8px;
+    box-sizing: border-box;
+
+    align-items: center;
+    gap: 8px;
+    flex-shrink: 0;
+    font-weight: 600;
+}
+
+.button:hover {
+    background-color: #dcdcdc;
+}
+
+.icon {
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 16px;
+    height: 16px;
+}
+
+.icon_mail {
+    background-image: url(images/mail.svg);
+}
+
+.icon_www {
+    background-image: url(images/www.svg);
+}
+
+.icon_behance {
+    background-image: url(images/behance.svg);
+}
+
+.icon_linkedin {
+    background-image: url(images/linkedin.svg);
+    width: 12px;
+    height: 12px;
+}
